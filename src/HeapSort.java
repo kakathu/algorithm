@@ -20,7 +20,7 @@ class MaxHeap {
         int j = 2 * begin + 1;
         boolean finished = false;
         while (j <= end && !finished) {
-            if (j < end && data[j] < data[j]) {
+            if (j < end && data[j] < data[j + 1]) {
                 j++;
             }
             if (temp >= data[j]) {
@@ -47,7 +47,7 @@ class MaxHeap {
 
 public class HeapSort {
     public static void main(String[] args) {
-        int[] data = {1, 8, 5, 9, 3};
+        int[] data = {1, 8, 8, 10, 5, 9, 3};
         MaxHeap maxHeap = new MaxHeap(data);
         maxHeap.sort();
         for (int i : data) {
