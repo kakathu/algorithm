@@ -4,7 +4,7 @@
  */
 public class QuickSort {
     public static void sort(int[] data) {
-        if (data == null || data.length == 0 || data.length == 1) {
+        if (data == null || data.length <= 1) {
             return;
         }
         quickSort(data, 0, data.length - 1);
