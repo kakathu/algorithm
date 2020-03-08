@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class LeetcodePermutation {
@@ -27,5 +28,15 @@ public class LeetcodePermutation {
         int[] nums = {1, 2, 3};
         List<List<Integer>> result = permute(nums);
         System.out.println(result);
+        String tiles = "a";
+
+        char[] chars = tiles.toCharArray();
+        chars[0] = 'b';
+        System.out.println(tiles);
+
+        StringBuilder sb = new StringBuilder("a");
+        sb.setCharAt(0, 'b');
+
+        System.out.println(sb);
     }
 }

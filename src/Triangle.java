@@ -14,11 +14,13 @@ public class Triangle {
                     curr[i][j] = ' ';
             }
 
+            // bottom
             for(int i = height; i < curr.length; i++) {
                 for(int j = 0; j < curr[0].length; j++) {
                     curr[i][j] = triangle[i - height][j%width];
                 }
             }
+            // top
             for(int i = 0; i < height; i++) {
                 for(int j = 0; j < curr[0].length; j++) {
                     if(j >= width/2 && j < width + width/2) {

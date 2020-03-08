@@ -1,3 +1,5 @@
+import java.util.*;
+
 class LCSSolution {
     public int getLCS(int[] a, int[] b) {
         //此处如果不用[a.length+1][b.length+1],边界需要额外处理
@@ -39,9 +41,40 @@ class LCSSolution {
 
 public class LongestCommonSubsequence {
     public static void main(String[] args) {
-        int[] a = {1, 2, 3, 4, 5, 8, 6};
+        int[] a = {1, 2, 3, 4, 5, 8};
         int[] b = {2, 4, 5, 6};
-        int result = new LCSSolution().getLCS(a, b);
-        System.out.println(result);
+//        int result = new LCSSolution().getLCS(a, b);
+//        System.out.println(result);
+//        System.out.println(Math.floor(1.15));
+//        Stack<Integer> s = new Stack<Integer>();
+//        System.out.println(s.peek());
+//        HashSet<Integer> s = new HashSet<>();
+//        s.add(1);
+//        List<Integer> l = new ArrayList<>();
+//        Queue<Integer> queue = new PriorityQueue<>();
+//        Map<String, String> m = new HashMap<>();
+//        StringBuilder sb = new StringBuilder();
+
+        List<Integer> list1 = new ArrayList<Integer>();
+        list1.add(1);
+        list1.add(6);
+        list1.add(4);
+        list1.add(2);
+        Integer[] t = new Integer[2];
+//        list1.toArray(new int[2]);
+        System.out.println(Arrays.toString(t));
+
+        char aa = '\u0905';
+        String s1 = "\u0905";
+        String s2 = "\u0905";
+        System.out.println(s1.equals(s2));
+        System.out.println(s1);
+        System.out.println(s1.getBytes().length);
+        String s3 = "中国";
+
+        System.out.println(s3.length());
+        System.out.println(s3.getBytes().length);
+        Map<String, String> m = new HashMap<>();
+//        m.remove();
     }
 }

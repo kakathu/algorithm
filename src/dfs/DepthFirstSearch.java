@@ -1,6 +1,8 @@
 package dfs;
 
+import java.util.HashMap;
 import java.util.Stack;
+import java.util.TreeMap;
 
 public class DepthFirstSearch {
     private static int N = 6;

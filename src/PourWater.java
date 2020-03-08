@@ -32,7 +32,7 @@ class PourWaterSolution {
         parent = new State[cap[0] + 1][cap[0] + 1][cap[0] + 1];
     }
 
-    public int dfs() {
+    public int bfs() {
         State startState = new State();
         startState.cup[0] = cap[0];
         startState.cup[1] = 0;
@@ -97,7 +97,7 @@ public class PourWater {
         int[] cap = {6, 3, 1};
         int[] end = {4, 1 ,1};
         PourWaterSolution solution = new PourWaterSolution(cap, end);
-        System.out.println(solution.dfs());
+        System.out.println(solution.bfs());
         List<State> path = new LinkedList<>();
         State s = new State();
         s.cup[0] = end[0];
